@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "957101165499",
+    "firebase_url": "https://pasphone-1636683505600-default-rtdb.firebaseio.com",
+    "project_id": "pasphone-1636683505600",
+    "storage_bucket": "pasphone-1636683505600.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957101165499:android:42df0296aaca565d77d29e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957101165499-jj8s270kmd531to9jgqvdbtm2lip7t3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication8",
+            "certificate_hash": "ec795c3c7e92d0c9e1f87ba0460a430020195e05"
+          }
+        },
+        {
+          "client_id": "957101165499-i2tmhoqm57l2ooskvfvp2k0lfq4kc150.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLom2PMJiagqvRmSuu2s1drKGZ4k4T1gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957101165499-i2tmhoqm57l2ooskvfvp2k0lfq4kc150.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

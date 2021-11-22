@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteDetailActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:padding="25dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/img_placeholder" />
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="310dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_detail"
+            android:paddingLeft="25dp"
+            android:paddingTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="40dp"
+                android:layout_toRightOf="@+id/phoneName"
+                android:background="#10162E"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:text="Add To Favorite"
+                android:textSize="20sp"
+                />
+
+            <ImageButton
+                android:id="@+id/btnAddInactive"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="40dp"
+                android:layout_toRightOf="@+id/phoneName"
+                android:background="#10162E"
+                android:src="@drawable/ic_favoriteinactive"
+                android:text="Add To Favorite"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/phoneName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:text="Phone Name "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneSpec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneName"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:text="Specs  "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneSpec"
+                android:layout_alignLeft="@id/phoneSpec"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text="OS  "
+                android:textColor="@color/white"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idOs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneSpec"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/phoneLabel"
+                android:text="OS"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/hpName"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneLabel"
+                android:layout_alignLeft="@+id/phoneLabel"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:text="Phone  "
+                android:textColor="@color/white"
+
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/idHp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneLabel"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/hpName"
+                android:layout_weight="0.5"
+                android:text="Phone"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/phoneDimension"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hpName"
+                android:layout_alignLeft="@+id/hpName"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:text="Dimension  "
+                android:textColor="@color/white"
+
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/idDimension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hpName"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/phoneDimension"
+                android:layout_weight="0.5"
+                android:text="Dimension"
+                android:textColor="@color/white"
+
+                />
+
+            <TextView
+                android:id="@+id/phoneStorage"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneDimension"
+                android:layout_alignLeft="@+id/phoneDimension"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:text="Storage  "
+                android:textColor="@color/white"
+
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/idStorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneDimension"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/phoneStorage"
+                android:layout_weight="0.5"
+                android:text="HP"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    <ProgressBar
+        android:id="@+id/detailProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+    </RelativeLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:src="@drawable/img_placeholder"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            />-->
+
+<!--        <View android:layout_height="5dp"-->
+<!--            android:layout_width="1dp"-->
+<!--            />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnDelete"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="#f00"-->
+<!--            android:text="Delete from Favorite"-->
+<!--            android:textColor="#fff"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <View android:layout_height="25dp"-->
+<!--            android:layout_width="1dp"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
